@@ -35,13 +35,13 @@ Where,[[2]](https://en.wikipedia.org/w/index.php?title=Hamiltonian_mechanics&old
 
 #### Numerical Methods[[1]](https://arxiv.org/abs/1206.1901)
 1. Euler's Method
-<img src="http://bit.ly/2WpwfuD" align="center" border="0" alt="\begin{cases}                p(t+\epsilon)=p(t)+\epsilon\frac{d p}{dt}(t)=p(t)-\epsilon\frac{\partial{H}}{\partial{x}}|_{x(t)}\\                x(t+\epsilon)=x(t)+\epsilon\frac{dx}{dt}(t)=x(t)+\epsilon\frac{\partial{H}}{\partial{p}}|_{p(t)}            \end{cases}" />
+<img src="http://www.sciweavers.org/upload/Tex2Img_1557068627/render.png"/>
 
 2. Modified Euler's Method
-<img src="http://bit.ly/2WrJdYO" align="center" border="0" alt=" \begin{cases}                p(t+\epsilon)=p(t)-\epsilon\frac{\partial{H}}{\partial{x}}|_{x(t)}\\                x(t+\epsilon)=x(t)+\epsilon p(t+\epsilon)            \end{cases}" />
+<img src="http://www.sciweavers.org/upload/Tex2Img_1557068516/render.png"/>
 
 3. Leapfrog Method
-<img src="http://bit.ly/2WpwfuD" align="center" border="0" alt="\begin{cases}                p(t+\frac{\epsilon}{2})=p(t)-\frac{\epsilon}{2}\frac{\partial{H}}{\partial{x}}|_{x(t)}\\                x(t+\epsilon)=x(t)+\epsilon p(t+\frac{\epsilon}{2})\\                p(t+\epsilon)=p(t+\frac{\epsilon}{2})-\frac{\epsilon}{2}\frac{\partial{H}}{\partial{x}}|_{x(t+\epsilon)}            \end{cases}"/>
+<img src="http://www.sciweavers.org/upload/Tex2Img_1557068596/render.png"/>
 
 
 <p float="middle">
