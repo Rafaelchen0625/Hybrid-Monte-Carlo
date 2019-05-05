@@ -15,7 +15,7 @@
 
 ## Langevin Sampling
 
-Langevin dynamics: <img src="http://www.sciweavers.org/upload/Tex2Img_1557064556/render.png"/>
+Langevin dynamics: <img src="http://www.sciweavers.org/upload/Tex2Img_1557064556/render.png">
 
 <p float="middle">
   <img src="https://github.com/Rafaelchen0625/Hybrid-Monte-Carlo/blob/master/Images/langevin_0.01.png", width="30%", height="30%"/>
@@ -29,11 +29,21 @@ Hamilton dynamics:
 
 <img src="http://www.sciweavers.org/upload/Tex2Img_1557065364/render.png"/>
 
-Where,[2](https://en.wikipedia.org/w/index.php?title=Hamiltonian_mechanics&oldid=848677024)
+Where,[[2]](https://en.wikipedia.org/w/index.php?title=Hamiltonian_mechanics&oldid=848677024)
 1. The first Hamilton equation means that the force equals the negative gradient of potential energy.
 2. The second Hamilton equation means that the particles velocity equals the derivative of its kinetic energy with respect to its momentum.
 
-#### Leapfrop Numerical Method
+#### Numerical Methods[[1]](https://arxiv.org/abs/1206.1901)
+1. Euler's Method
+<img src="http://bit.ly/2WpwfuD" align="center" border="0" alt="\begin{cases}                p(t+\epsilon)=p(t)+\epsilon\frac{d p}{dt}(t)=p(t)-\epsilon\frac{\partial{H}}{\partial{x}}|_{x(t)}\\                x(t+\epsilon)=x(t)+\epsilon\frac{dx}{dt}(t)=x(t)+\epsilon\frac{\partial{H}}{\partial{p}}|_{p(t)}            \end{cases}" />
+
+2. Modified Euler's Method
+<img src="http://bit.ly/2WrJdYO" align="center" border="0" alt=" \begin{cases}                p(t+\epsilon)=p(t)-\epsilon\frac{\partial{H}}{\partial{x}}|_{x(t)}\\                x(t+\epsilon)=x(t)+\epsilon p(t+\epsilon)            \end{cases}" />
+
+3. Leapfrog Method
+<img src="http://bit.ly/2WpwfuD" align="center" border="0" alt="\begin{cases}                p(t+\frac{\epsilon}{2})=p(t)-\frac{\epsilon}{2}\frac{\partial{H}}{\partial{x}}|_{x(t)}\\                x(t+\epsilon)=x(t)+\epsilon p(t+\frac{\epsilon}{2})\\                p(t+\epsilon)=p(t+\frac{\epsilon}{2})-\frac{\epsilon}{2}\frac{\partial{H}}{\partial{x}}|_{x(t+\epsilon)}            \end{cases}"/>
+
+
 <p float="middle">
   <img src="https://github.com/Rafaelchen0625/Hybrid-Monte-Carlo/blob/master/Images/HMC_epsilon_0_0_1.png", width="30%", height="30%"/>
   <img src="https://github.com/Rafaelchen0625/Hybrid-Monte-Carlo/blob/master/Images/HMC_epsilon_0_5.png", width="30%", height="30%"/>
