@@ -33,6 +33,7 @@ Where,[2](https://en.wikipedia.org/w/index.php?title=Hamiltonian_mechanics&oldid
 1. The first Hamilton equation means that the force equals the negative gradient of potential energy.
 2. The second Hamilton equation means that the particles velocity equals the derivative of its kinetic energy with respect to its momentum.
 
+#### Leapfrop Numerical Method
 <p float="middle">
   <img src="https://github.com/Rafaelchen0625/Hybrid-Monte-Carlo/blob/master/Images/HMC_epsilon_0_0_1.png", width="30%", height="30%"/>
   <img src="https://github.com/Rafaelchen0625/Hybrid-Monte-Carlo/blob/master/Images/HMC_epsilon_0_5.png", width="30%", height="30%"/>
