@@ -5,6 +5,7 @@
 
 ## Random Walk Sampling
 <img src="http://www.sciweavers.org/upload/Tex2Img_1557062476/render.png"/>
+<img src="http://www.sciweavers.org/upload/Tex2Img_1557063410/render.png"/>
 
 <p float="middle">
   <img src="https://github.com/Rafaelchen0625/Hybrid-Monte-Carlo/blob/master/Images/random_walk_0.01.png", width="30%", height="30%"/>
@@ -14,6 +15,8 @@
 
 ## Langevin Sampling
 
+Langevin dynamics: <img src="http://www.sciweavers.org/upload/Tex2Img_1557064556/render.png"/>
+
 <p float="middle">
   <img src="https://github.com/Rafaelchen0625/Hybrid-Monte-Carlo/blob/master/Images/langevin_0.01.png", width="30%", height="30%"/>
   <img src="https://github.com/Rafaelchen0625/Hybrid-Monte-Carlo/blob/master/Images/langevin_0.1.png", width="30%", height="30%"/>
@@ -21,6 +24,14 @@
 </p>
 
 ## Hamiltonian Sampling
+
+Hamilton dynamics: 
+
+<img src="http://www.sciweavers.org/upload/Tex2Img_1557065364/render.png"/>
+
+Where,[2](https://en.wikipedia.org/w/index.php?title=Hamiltonian_mechanics&oldid=848677024)
+1. The first Hamilton equation means that the force equals the negative gradient of potential energy.
+2. The second Hamilton equation means that the particles velocity equals the derivative of its kinetic energy with respect to its momentum.
 
 <p float="middle">
   <img src="https://github.com/Rafaelchen0625/Hybrid-Monte-Carlo/blob/master/Images/HMC_epsilon_0_0_1.png", width="30%", height="30%"/>
@@ -58,3 +69,5 @@
 
 ## Reference
 [1] [Neal, Radford M. "MCMC using Hamiltonian dynamics, ArXiv e-prints." arXiv preprint arXiv:1206.1901 (2012).](https://arxiv.org/abs/1206.1901)
+
+[2] [Hamiltonian mechanics](https://en.wikipedia.org/w/index.php?title=Hamiltonian_mechanics&oldid=848677024)
